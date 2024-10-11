@@ -40,12 +40,14 @@ The hidden file `.project_x.txt` currently has read permissions for the user and
 The Linux command `chmod u-w,g=r .project_x.txt` will correct this error to the appropriate permissions and authorization for the types of owners. This is indicated by pink.
 The Linux command `ls -la` is used once again to check that the correction was successful. The result is indicated by green.
 
-<img src="" width="600" />
+<img src="https://github.com/melaniedaniel7/Using-Linux-commands-to-manage-file-permissions/blob/29f7f5a39e7a73df9ff5407311b18cca924efca1/Screenshot%202024-10-11%20at%2014.42.55.png" width="600" />
 
 ### Change directory permissions
+The files and directories in the projects directory belong to the researcher2 user. Only researcher2 should be allowed to access the drafts directory and its contents. The Linux command `ls -l` displays permissions to files and directories. This is indicated by green. The image below shows that currently the group has execute permissions. This is indicated by red.
+The Linux command `chmod g-x drafts` will modify this so that the correct permissions and authorizations are in place. This is indicated by purple.
+The Linux command `ls -l` is used to check if the corrections were successful. The result is indicated by blue.
 
+<img src="" width="600" />
 
 ### Summary
-In the Summary section, provide a short summary of the previous tasks and connect them to the scenario. Write approximately two to four sentences.
-Your task is to examine existing permissions on the file system. You’ll need to determine if the permissions match the authorization that should be given. 
-If they do not match, you’ll need to modify the permissions to authorize the appropriate users and remove any unauthorized access.
+In this activity I checked file and directory details. I examined permissions useing the `ls -l` Linux command, I explained the 10-character string with an example of various permissions for the three types of owners, I determined if permissions matched the authorization they should be given, and if they did not I modified the permissions to authorize the appropriate users and remove any unauthorized access using the `chmod` Linux command for both normal and hidden files. Finally, I changed the draft directory permissions so that only researcher2 would be allowed to access the drafts directory and its contents using the `chmod` Linux command.
