@@ -14,14 +14,11 @@ I use Linus commands to help keep the system secure by implementing the principl
 
 
 ### Check file and directory details
-Describe the command you can use to check permissions and indicate the current permissions.
-The Linux command to check permissions is `ls -l` indicated below by green. The current permissions are represented by a 10-character string which is indicated below by red. The file and directory names are indicated below by blue.
+The Linux command to check permissions is `ls -l` indicated below by green. The current permissions are represented by a 10-character string which is indicated below by red. The file and directory names contained within the current working directory called projects are indicated below by blue.
 
-![screenshot 1](https://github.com/melaniedaniel7/Using-Linux-commands-to-manage-file-permissions/blob/4fa62265862da01e3710977be289daa27d1e484e/Screenshot%202024-10-11%20at%2013.17.04.png)
+<img src="https://github.com/melaniedaniel7/Using-Linux-commands-to-manage-file-permissions/blob/4fa62265862da01e3710977be289daa27d1e484e/Screenshot%202024-10-11%20at%2013.17.04.png" width="600" />
 
 ### Describe the permissions string
-write a short description that explains the 10-character string in the example. 
-You should describe what the 10-character string is for and what each character represents.
 In the 10-character string the file or directory is indicated by character 1, the user group permissions are indicated by characters 2-4, the group permissions is represented by characters 5-7, and the other users permissions are represented by characters 8-10.
 There are three types of permissions for each of the three types of owners mentioned above. 
 The three types of permissions in Linus are:
@@ -36,7 +33,10 @@ The current permissions indicate that:
 - The `project_t.txt` is a file `-` where the user and group both have read `r` and write `w` permissions. The other users only have read `r` permissions.
 
 ### Change file permissions
-
+The organization does not allow others to have write access to any files. 
+Based off the image below the file `project_k.txt`, indicated by green, needs to have its write permissions modified. 
+The Linux command to modify permissions is `chmod`. The Linux command to remove write permissions for other users in this file is `chmod o-w project_k.txt`. This is indicated by purple. The Linux command `ls -l` is used to check that these permissions were modified successfully. The result is indicated by pink.
+<img src="" width="600" />
 
 ### Change file permissions on a hidden file
 
