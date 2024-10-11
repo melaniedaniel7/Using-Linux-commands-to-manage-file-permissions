@@ -1,17 +1,10 @@
 # File permissions in Linux
-Screenshots of your commands 
-Explanations of your commands
-Details on using chmod to update file permissions
-Details on checking file permissions with ls -la
-Details on interpreting the 10-character string that represents file permissions
-Details on hidden files and directories
+
 
 ### Project description
-Describe what you accomplish through Linux commands.
-In the Project description section, give a general overview of the scenario and what you accomplish through Linux. Write two to four sentences.
 In this activity I acted as a security professional at a large organization. In this scenario I primarily work with the research team.
 I use Linus commands to help keep the system secure by implementing the principle of least privilege, managing authorizations and permissions.
-
+In this activity I examined existing permissions on the file system, I determined if the permissions match the authorization that should be given, and I modified the permissions to authorize the appropriate users and remove any unauthorized access.
 
 ### Check file and directory details
 The Linux command to check permissions is `ls -l` indicated below by green. The current permissions are represented by a 10-character string which is indicated below by red. The file and directory names contained within the current working directory called projects are indicated below by blue.
@@ -36,10 +29,18 @@ The current permissions indicate that:
 The organization does not allow others to have write access to any files. 
 Based off the image below the file `project_k.txt`, indicated by green, needs to have its write permissions modified. 
 The Linux command to modify permissions is `chmod`. The Linux command to remove write permissions for other users in this file is `chmod o-w project_k.txt`. This is indicated by purple. The Linux command `ls -l` is used to check that these permissions were modified successfully. The result is indicated by pink.
-<img src="" width="600" />
+
+<img src="https://github.com/melaniedaniel7/Using-Linux-commands-to-manage-file-permissions/blob/eb218cffd4a87b567ed8a665873cc6b5ed37374a/Screenshot%202024-10-11%20at%2014.13.15.png" width="600" />
 
 ### Change file permissions on a hidden file
+The research team has archived .project_x.txt, which is why it’s a hidden file.
+The Linux command `ls -la` displays hidden files. This command is indicated by blue in the image below.
+The organization does not want this file to have write permissions for anyone, but the user and group should be able to read the file. 
+The hidden file `.project_x.txt` currently has read permissions for the user and write permissions for both the user and the group. This is indicated by red.
+The Linux command `chmod u-w,g=r .project_x.txt` will correct this error to the appropriate permissions and authorization for the types of owners. This is indicated by pink.
+The Linux command `ls -la` is used once again to check that the correction was successful. The result is indicated by green.
 
+<img src="" width="600" />
 
 ### Change directory permissions
 
