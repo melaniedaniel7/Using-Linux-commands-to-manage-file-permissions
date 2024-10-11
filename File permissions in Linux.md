@@ -47,7 +47,7 @@ The files and directories in the projects directory belong to the researcher2 us
 The Linux command `chmod g-x drafts` will modify this so that the correct permissions and authorizations are in place. This is indicated by purple.
 The Linux command `ls -l` is used to check if the corrections were successful. The result is indicated by blue.
 
-<img src="" width="600" />
+<img src="https://github.com/melaniedaniel7/Using-Linux-commands-to-manage-file-permissions/blob/9dc80bb137881049805d29f7ba852077c884b480/Screenshot%202024-10-11%20at%2015.10.16.png" width="600" />
 
 ### Summary
 In this activity I checked file and directory details. I examined permissions useing the `ls -l` Linux command, I explained the 10-character string with an example of various permissions for the three types of owners, I determined if permissions matched the authorization they should be given, and if they did not I modified the permissions to authorize the appropriate users and remove any unauthorized access using the `chmod` Linux command for both normal and hidden files. Finally, I changed the draft directory permissions so that only researcher2 would be allowed to access the drafts directory and its contents using the `chmod` Linux command.
