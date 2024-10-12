@@ -37,7 +37,7 @@ The Linux command to modify permissions is `chmod`. The Linux command to remove 
 The research team has archived .project_x.txt, which is why it’s a hidden file.
 The Linux command `ls -la` displays hidden files. This command is indicated by blue in the image below.
 The organization does not want this file to have write permissions for anyone, but the user and group should be able to read the file. 
-The hidden file `.project_x.txt` currently has read permissions for the user and write permissions for both the user and the group. This is indicated by red.
+The hidden file `.project_x.txt` currently has read permissions for the user and write permissions for both the user and the group. The period `.` before `.project_x.txt` indicates that this file is hidden. This is indicated by red.
 The Linux command `chmod u-w,g=r .project_x.txt` will correct this error to the appropriate permissions and authorization for the types of owners. This is indicated by pink.
 The Linux command `ls -la` is used once again to check that the correction was successful. The result is indicated by green.
 
